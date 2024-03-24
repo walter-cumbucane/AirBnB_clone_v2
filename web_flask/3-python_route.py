@@ -31,6 +31,13 @@ def c(text):
     return "C " + new
 
 
+@app.route("/python/<text>")
+@app.route('/python', defaults={'text': 'is cool'})
+def python(text):
+    new = text.replace('_', ' ')
+    return "Python " + new
+
+
 def main():
     """
         Setups the application's listening process
