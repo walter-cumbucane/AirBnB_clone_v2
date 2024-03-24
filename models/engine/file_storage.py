@@ -66,3 +66,8 @@ class FileStorage:
         else:
             if obj.__class__.__name__+'.' + obj.id in self.__objects:
                 del self.__objects[obj.__class__.__name__+'.' + obj.id]
+
+
+    def close(self):
+        """Closes the storage engine."""
+        self.reload()
