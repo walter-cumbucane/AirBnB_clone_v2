@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 from flask import Flask
+"""
+    Contains flask code
+"""
 
 
 app = Flask(__name__)
